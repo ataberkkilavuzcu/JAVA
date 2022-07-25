@@ -42,22 +42,7 @@ public class InsertionSort {
 	
 	
 	
-	public static void swap(int [] array, int i, int j) {
-		if(i == j) {
-			return;
-		}
-		
-		if(array[i]>array[j]) {
-			int temp=0;
-			temp = array[i];
-			array[i] = array[j];
-			array[j] = temp;
-		}
-		
-		
-		
-		
-	}
+	
 	
 	
 	
