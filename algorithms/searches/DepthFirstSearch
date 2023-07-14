@@ -1,1 +1,19 @@
+public class BreadthFirstSearch {
 
+  public void dfsHelper(int source, boolean[] visited){
+        visited[source] = true;
+        Iterator<Integer> i = adj[source].listIterator();
+        while (i.hasNext()) {
+            int n = i.next();
+            if (!visited[n])
+                DFSUtil(n, visited);
+        }
+
+
+public void dfs(int source){
+    boolean visited[] = new boolean[size];
+    dfsHelper(source, visited);
+
+} 
+
+}
