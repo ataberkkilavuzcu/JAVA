@@ -1,1 +1,34 @@
+public class BreadthFirstSearch {
 
+  public void bfs(int source){
+   	Queue<Integer> queue = new LinkedList<>();
+    	
+    	boolean[] visited = new boolean[size];
+    	
+    	visited[source] = true;
+    	
+    	queue.add(source);
+    	
+        while (queue.size() != 0) {
+        	 
+            source = queue.poll();
+
+            Iterator<Integer> i = adj[source].listIterator();
+            while (i.hasNext()) {
+                int n = i.next();
+                if (!visited[n]) {
+                    visited[n] = true;
+                    queue.add(n);
+                }
+            }
+        }
+
+
+  
+}
+	
+	
+	
+	
+
+}
