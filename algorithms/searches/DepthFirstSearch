@@ -6,7 +6,7 @@ public class BreadthFirstSearch {
         while (i.hasNext()) {
             int n = i.next();
             if (!visited[n])
-                DFSUtil(n, visited);
+                dfsHelper(n, visited);
         }
 
 
